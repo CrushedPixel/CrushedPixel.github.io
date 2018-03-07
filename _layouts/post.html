@@ -28,11 +28,9 @@ layout: base
 					{%- else -%}
 						<meta itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}">
 					{%- endif -%}
-					<div class="article-license">
-						{%- include components/license.html -%}
-					</div>
 				</footer>
 			</article>
+			{%- if page.next or page.previous -%}
 			<div class="article-previous-next clearfix">
 				{%- if page.next -%}
 					{%- assign __path = page.next.url -%}
@@ -51,6 +49,7 @@ layout: base
 					<div class="article-next"><span>{{ __return }}</span><a href="{{ href }}">{{ page.previous.title }}</a></div>
 				{%- endif -%}
 			</div>
+			{%- endif -%}
 			{%- if jekyll.environment != "development" and page.comment != false -%}
 				<section>{%- include utils/comment-disqus.html -%}</section>
 				<section>{%- include utils/comment-gitalk.html -%}</section>
