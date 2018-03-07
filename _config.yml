@@ -67,7 +67,7 @@ excerpt_type: text # text | html
 ## Build ##
 markdown: kramdown
 highlighter: rouge
-permalink: date
+permalink: /:categories/:title/
 
 exclude:
   - CHANGELOG.md
