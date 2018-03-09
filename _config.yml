@@ -20,13 +20,13 @@ description: CrushedPixel's Programming Blog.
 
 nav_lists:
   - title: About
-    url: /about.html
+    url: /about/
 
-# paths:
-#   base: /
-#   home: /
-#   all:  /all.html
-#   rss:  /feed.xml
+paths:
+  base: /
+  home: /
+  all:  /all/
+  rss:  /feed/
 
 ## GitHub repository (if the site is hosted by GitHub) ##
 repository: CrushedPixel/CrushedPixel.github.io
